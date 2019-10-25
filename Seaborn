@@ -10,22 +10,40 @@ import seaborn as sns
 # Read the file into a variable <data>
 <data> = pd.read_csv(<filepath>, index_col="<...>", ...)
 
+
+
 # Set the width and height of the line chart
-plt.figure(figsize=(<width>,<height>)
+plt.figure(figsize=(<width>,<height>))
 
 # Line chart
 sns.lineplot(data=<data>)
 
+
+
 # Set the width and height of the bar chart
-plt.figure(figsize=(<width>,<height>)
+plt.figure(figsize=(<width>,<height>))
 
 # Add bar chart title
 plt.title("<title>")
 
-# Bar chart showing average arrival delay for Spirit Airlines flights by month
+# Bar chart showing ...
 sns.barplot(x=<data>.index, y= <data>['<column name>'])
 
 # Add label for vertical axis
 plt.ylabel("<ylabel>")
+
+
+
+# Set the width and height of the heatmap
+plt.figure(figsize=(<width>,<height>))
+
+# Add heatmap title
+plt.title("<title>")
+
+# Heatmap showing ...
+sns.heatmap(data=<data>, annot=True)
+
+# Add label for horizontal axis
+plt.xlabel("<xlabel>")
 
 
