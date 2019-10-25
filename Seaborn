@@ -4,3 +4,14 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 import seaborn as sns
 
+# Path of the file to read
+<filepath> = "../input/(name>.csv"
+
+# Read the file into a variable <data>
+<data> = pd.read_csv(<filepath>, index_col="<...>", ...)
+
+# Set the width and height of the figure
+plt.figure(figsize=(<width>, <height>))
+
+# Line chart
+sns.lineplot(data=<data>)
